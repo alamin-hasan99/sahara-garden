@@ -2,10 +2,13 @@ import "./globals.css";
 import { AppProvider } from "@/context/AppContext";
 
 export const metadata = {
+  icons: {
+    icon: "/icon.png", 
+  },
   title: "Sahara Garden | Premium Farm-to-Table E-Commerce",
   description: "Savor premium organic farm-to-table artisan produce, hand-harvested and delivered fresh to your doorstep. Experience the true taste of nature.",
   keywords: "organic, Sahara Garden, farm-to-table, fresh produce, strawberries, honey, avocados, premium grocery",
-  authors: [{ name: "Sahara Garden" }],
+  authors: [{ name: "Al-amin Hasan" }],
 };
 
 export default function RootLayout({ children }) {
@@ -19,3 +22,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
