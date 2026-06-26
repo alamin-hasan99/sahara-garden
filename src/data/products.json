@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "name": "Organic Ruby Strawberries",
+    "category": "fruits",
+    "price": 29.99,
+    "image": "assets/strawberries.png",
+    "tag": "Best Seller",
+    "shortDesc": "Sweet, vibrant red strawberries freshly hand-picked from the vine.",
+    "longDesc": "Cultivated in the sun-drenched valleys of our organic partner orchards, our ruby strawberries are incredibly sweet, juicy, and packed with Vitamin C. Hand-harvested in small batches every morning at peak ripeness to ensure optimal sugars and deep, rich aroma.",
+    "nutrition": {
+      "calories": "32 kcal",
+      "carbs": "7.7g",
+      "fiber": "2.0g",
+      "protein": "0.7g"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Hass Creamy Avocados",
+    "category": "fruits",
+    "price": 24.99,
+    "image": "assets/avocados.png",
+    "tag": "Heart Healthy",
+    "shortDesc": "Buttery Hass avocados ripened to perfection on the tree.",
+    "longDesc": "Sourced from our certified biodynamic partner farms in California, these Hass avocados arrive tree-ripened and flavor-ready. Rich in monounsaturated fats, potassium, and natural folate. Perfect for guacamole, toast spreads, and gourmet salads.",
+    "nutrition": {
+      "calories": "160 kcal",
+      "carbs": "9g",
+      "fiber": "7g",
+      "protein": "2g"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Raw Wildflower Honey",
+    "category": "pantry",
+    "price": 34.99,
+    "image": "assets/honey.png",
+    "tag": "Raw & Unfiltered",
+    "shortDesc": "100% raw, unfiltered wildflower honey from free-range hives.",
+    "longDesc": "Our raw wildflower honey is hand-harvested by third-generation beekeepers in the Blue Ridge foothills. Never heated above 95°F to preserve full enzyme activity, natural pollen, propolis, and the full floral complexity of the seasonal meadow bloom.",
+    "nutrition": {
+      "calories": "64 kcal",
+      "carbs": "17g",
+      "fiber": "0g",
+      "protein": "0.1g"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Heirloom Vine Tomatoes",
+    "category": "vegetables",
+    "price": 19.99,
+    "image": "assets/tomatoes.png",
+    "tag": "Sun-Ripened",
+    "shortDesc": "Heritage variety tomatoes bursting with summer garden sweetness.",
+    "longDesc": "Grown from rare open-pollinated heirloom seeds, these vine-ripened tomatoes develop complex sugars and acids that no modern hybrid can replicate. Harvested at blush and finished on the vine to ensure each piece is sweet, tangy, and intensely flavored.",
+    "nutrition": {
+      "calories": "18 kcal",
+      "carbs": "3.9g",
+      "fiber": "1.2g",
+      "protein": "0.9g"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Stone-Fruit Peach Harvest",
+    "category": "fruits",
+    "price": 22.99,
+    "image": "assets/peaches.png",
+    "tag": "Seasonal Pick",
+    "shortDesc": "Fragrant, golden-blush peaches at the height of their summer season.",
+    "longDesc": "Our Georgia-style peaches are handpicked daily at exactly the right moment of sugar development — firm enough to travel perfectly, but bursting with floral sweetness on the first bite. Perfect for pies, cobblers, jams, and fresh slicing.",
+    "nutrition": {
+      "calories": "39 kcal",
+      "carbs": "10g",
+      "fiber": "1.5g",
+      "protein": "0.9g"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Sun-Kissed Apricots",
+    "category": "fruits",
+    "price": 21.99,
+    "image": "assets/apricots.png",
+    "tag": "Limited Batch",
+    "shortDesc": "Tender, velvety apricots with a honey-kissed stone-fruit finish.",
+    "longDesc": "These apricots are grown in the mineral-rich soils of our Okanagan partner orchard and harvested by hand at peak ripeness. High in beta-carotene, potassium, and natural antioxidants. Their honey-sweet, slightly tart profile makes them exceptional for fresh eating, preserves, or artisan cheese pairings.",
+    "nutrition": {
+      "calories": "48 kcal",
+      "carbs": "11g",
+      "fiber": "2g",
+      "protein": "1.4g"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Green Apple",
+    "category": "fruits",
+    "price": 99.99,
+    "image": "assets/green.jpg",
+    "tag": "Seasonal Pick",
+    "shortDesc": "Green Apple",
+    "longDesc": "Green Apple",
+    "nutrition": {
+      "calories": "N/A",
+      "carbs": "N/A",
+      "fiber": "N/A",
+      "protein": "N/A"
+    }
+  }
+]

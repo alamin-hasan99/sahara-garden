@@ -1,26 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-primary: #122b1e;
+  --color-primary-light: #1b3d2c;
+  --color-secondary: #7b9582;
+  --color-accent: #cca43b;
+  --color-accent-hover: #b58d2d;
+  --color-body-bg: #fcfaf6;
+  --color-card-bg: #ffffff;
+  --color-text-dark: #1b1b1a;
+  --color-text-muted: #5e6b61;
+  --color-text-white: #ffffff;
+
+  --font-heading: 'Cinzel', serif;
+  --font-body: 'Outfit', sans-serif;
+  
+  --animate-pop: popIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-fade: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+  
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Global resets for our specific theme */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-body);
+  background-color: var(--color-body-bg);
+  color: var(--color-text-dark);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark html {
+  background-color: #0b0f19;
+  color: #f3f4f6;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-body-bg);
+}
+.dark ::-webkit-scrollbar-track {
+  background: #0b0f19;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
+
+/* Base keyframes */
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes swim-path {
+  0% {
+    left: -150px;
+    top: 38%;
+    transform: scaleX(-1) rotate(2deg);
+  }
+  48% {
+    left: 110%;
+    top: 42%;
+    transform: scaleX(-1) rotate(-1deg);
+  }
+  50% {
+    left: 110%;
+    top: 42%;
+    transform: scaleX(1) rotate(0deg);
+  }
+  98% {
+    left: -150px;
+    top: 34%;
+    transform: scaleX(1) rotate(-2deg);
+  }
+  100% {
+    left: -150px;
+    top: 38%;
+    transform: scaleX(-1) rotate(0deg);
+  }
+}
+
+@keyframes tail-wiggle {
+  0% {
+    transform: rotate(-12deg);
+  }
+  100% {
+    transform: rotate(12deg);
+  }
+}
+
+@keyframes fin-flap {
+  0% {
+    transform: rotate(-6deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes float-bubble {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.7;
+  }
+  90% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-95vh) translateX(30px);
+    opacity: 0;
+  }
+}
+
+@keyframes toastSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Custom Animation Utility Classes */
+.animate-swim {
+  animation: swim-path 28s linear infinite;
+}
+
+.animate-tail-wiggle {
+  animation: tail-wiggle 0.25s ease-in-out infinite alternate;
+}
+
+.animate-fin-flap {
+  animation: fin-flap 0.5s ease-in-out infinite alternate;
+}
+
+.animate-dorsal-flap {
+  animation: fin-flap 0.8s ease-in-out infinite alternate;
+}
+
+.animate-float-bubble {
+  animation: float-bubble 14s linear infinite;
+}
+
+.animate-toast-slide {
+  animation: toastSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Glassmorphism helpers */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(18, 43, 30, 0.08);
+}
+
+.dark .glass-nav {
+  background: rgba(17, 24, 39, 0.75);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(18, 43, 30, 0.08);
+}
+
+.dark .glass-card {
+  background: rgba(17, 24, 39, 0.7);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }

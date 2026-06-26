@@ -1,0 +1,146 @@
+[
+  {
+    "id": "GG-4703-95",
+    "date": "2026-06-26T15:42:13.447Z",
+    "items": [
+      {
+        "product": {
+          "id": 6,
+          "name": "Sun-Kissed Apricots",
+          "category": "fruits",
+          "price": 21.99,
+          "image": "assets/apricots.png",
+          "tag": "Limited Batch",
+          "shortDesc": "Tender, velvety apricots with a honey-kissed stone-fruit finish.",
+          "longDesc": "These apricots are grown in the mineral-rich soils of our Okanagan partner orchard and harvested by hand at peak ripeness. High in beta-carotene, potassium, and natural antioxidants. Their honey-sweet, slightly tart profile makes them exceptional for fresh eating, preserves, or artisan cheese pairings.",
+          "nutrition": {
+            "calories": "48 kcal",
+            "carbs": "11g",
+            "fiber": "2g",
+            "protein": "1.4g"
+          }
+        },
+        "quantity": 1
+      }
+    ],
+    "subtotal": 21.99,
+    "discount": 0,
+    "shipping": 5,
+    "tax": 1.7591999999999999,
+    "total": 28.7492,
+    "status": "Pending"
+  },
+  {
+    "id": "GG-9240-71",
+    "date": "2026-06-26T14:56:52.813Z",
+    "items": [
+      {
+        "product": {
+          "id": 1,
+          "name": "Organic Ruby Strawberries",
+          "category": "fruits",
+          "price": 29.99,
+          "image": "assets/strawberries.png",
+          "tag": "Best Seller",
+          "shortDesc": "Sweet, vibrant red strawberries freshly hand-picked from the vine.",
+          "longDesc": "Cultivated in the sun-drenched valleys of our organic partner orchards, our ruby strawberries are incredibly sweet, juicy, and packed with Vitamin C. Hand-harvested in small batches every morning at peak ripeness to ensure optimal sugars and deep, rich aroma.",
+          "nutrition": {
+            "calories": "32 kcal",
+            "carbs": "7.7g",
+            "fiber": "2.0g",
+            "protein": "0.7g"
+          }
+        },
+        "quantity": 1
+      }
+    ],
+    "subtotal": 29.99,
+    "discount": 0,
+    "shipping": 5,
+    "tax": 2.3992,
+    "total": 37.389199999999995,
+    "status": "Pending"
+  },
+  {
+    "id": "GG-4785-68",
+    "date": "2026-06-23T13:07:01.735Z",
+    "items": [
+      {
+        "product": {
+          "id": 1,
+          "name": "Organic Ruby Strawberries",
+          "category": "fruits",
+          "price": 29.99,
+          "image": "assets/tomatoes.png",
+          "tag": "Best Seller",
+          "shortDesc": "Sweet, vibrant red strawberries freshly hand-picked from the vine.",
+          "longDesc": "Cultivated in the sun-drenched valleys of our organic partner orchards, our ruby strawberries are incredibly sweet, juicy, and packed with Vitamin C. Hand-harvested in small batches every morning at peak ripeness to ensure optimal sugars and deep, rich aroma.",
+          "nutrition": {
+            "calories": "32 kcal",
+            "carbs": "7.7g",
+            "fiber": "2.0g",
+            "protein": "0.7g"
+          }
+        },
+        "quantity": 12
+      }
+    ],
+    "subtotal": 359.88,
+    "discount": 35.988,
+    "shipping": 0,
+    "tax": 28.7904,
+    "total": 352.6824,
+    "status": "Delivered"
+  },
+  {
+    "id": "GG-7275-90",
+    "date": "2026-06-23T10:44:30.008Z",
+    "items": [
+      {
+        "product": {
+          "id": 3,
+          "name": "Artisan Wildflower Honey",
+          "category": "pantry",
+          "price": 15.99,
+          "image": "assets/honey.png",
+          "tag": "Artisan Crafted",
+          "shortDesc": "Raw, unpasteurized honey gathered from pristine wild meadows.",
+          "longDesc": "Harvested by multi-generational beekeepers from pristine wild flower fields, our wildflower honey is completely raw, cold-filtered, and untreated. This preserves all natural enzymes, floral pollens, and a complex, exquisite depth of flavor.",
+          "nutrition": {
+            "calories": "64 kcal",
+            "carbs": "17.0g",
+            "sugars": "16.0g",
+            "protein": "0.1g"
+          }
+        },
+        "quantity": 1
+      }
+    ],
+    "subtotal": 15.99,
+    "discount": 0,
+    "shipping": 5,
+    "tax": 1.2792000000000001,
+    "total": 22.2692,
+    "status": "Delivered"
+  },
+  {
+    "id": "GG-3051-25",
+    "date": "2026-05-20T06:00:38.459Z",
+    "items": [
+      {
+        "product": {
+          "id": 1,
+          "name": "Organic Ruby Strawberries",
+          "price": 8.99
+        },
+        "quantity": 2
+      }
+    ],
+    "subtotal": 17.98,
+    "discount": 0,
+    "shipping": 5,
+    "tax": 1.44,
+    "total": 24.42,
+    "status": "Delivered"
+  }
+]
