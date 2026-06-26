@@ -22,6 +22,7 @@ import {
   X,
   Check
 } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Dashboard() {
   const [activeTab, setActiveTab] = useState('overview');
@@ -259,15 +260,15 @@ export default function Dashboard() {
       {/* Sidebar navigation */}
       <aside className="w-[260px] border-r border-yellow-500/10 bg-slate-950/85 backdrop-blur px-6 py-8 flex flex-col justify-between hidden lg:flex relative z-10 shrink-0 h-screen sticky top-0">
         <div>
-          <a href="/" className="flex items-center gap-3 mb-10 text-gray-100 decoration-0">
+          <div className="flex items-center gap-3 mb-10 text-gray-100 decoration-0">
             <div className="w-10 h-10 bg-gradient-to-br from-[#e5c158] to-[#ab851e] rounded-xl flex items-center justify-center shadow-lg shadow-accent/20 text-[#0b0f19] shrink-0">
               <Sprout className="w-5 h-5 stroke-[2]" />
             </div>
             <div className="text-left">
-              <h1 className="font-heading text-base font-bold tracking-wide">Gourmet Garden</h1>
+              <h1 className="font-heading text-base font-bold tracking-wide">Sahara Garden</h1>
               <span className="text-[0.65rem] tracking-[2px] uppercase text-accent font-medium block">Command Panel</span>
             </div>
-          </a>
+          </div> 
 
           <ul className="flex flex-col gap-2">
             {[
@@ -300,10 +301,10 @@ export default function Dashboard() {
         <div className="border-t border-yellow-500/10 pt-6">
           <div className="flex items-center gap-3 text-left">
             <div className="w-11 h-11 rounded-full bg-gradient-to-tr from-accent to-green-500 flex items-center justify-center font-bold text-[#0b0f19] border border-white/10 shrink-0">
-              GG
+              AH
             </div>
             <div>
-              <div className="text-xs font-bold">Farm Master Admin</div>
+              <div className="text-xs font-bold">Al-amin Hasan</div>
               <div className="text-[0.65rem] text-gray-400">System Administrator</div>
             </div>
           </div>
@@ -320,12 +321,13 @@ export default function Dashboard() {
             <p className="text-xs text-gray-400 mt-1">Real-time shop intelligence and agricultural supply-chain logistics</p>
           </div>
           <div className="flex items-center gap-3 shrink-0">
-            <a 
-              href="/" 
+            <Link 
+              href="/"
+              target='_blank' 
               className="inline-flex items-center gap-2 bg-white/5 border border-yellow-500/10 hover:border-accent text-xs sm:text-sm text-gray-100 px-4 py-2 rounded-xl font-medium transition-colors"
             >
               <ExternalLink className="w-4 h-4" /> Visit Consumer Store
-            </a>
+            </Link>
             <button 
               onClick={() => handleOpenModal('create')}
               className="inline-flex items-center gap-2 bg-gradient-to-r from-accent to-yellow-600 hover:shadow-lg hover:shadow-accent/25 hover:-translate-y-0.5 text-xs sm:text-sm text-[#0b0f19] px-4 py-2.5 rounded-xl font-bold transition-all cursor-pointer"
